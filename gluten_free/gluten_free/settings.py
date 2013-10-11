@@ -133,7 +133,7 @@ ROOT_URLCONF = 'gluten_free.urls'
 WSGI_APPLICATION = 'gluten_free.wsgi.application'
 
 TEMPLATE_DIRS = (
-    os.path.join(PROJECT_PATH,'plantillas'),
+    os.path.join(PROJECT_PATH,'templates'),
 )
 
 INSTALLED_APPS = (

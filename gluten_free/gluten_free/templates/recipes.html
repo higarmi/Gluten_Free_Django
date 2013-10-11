@@ -17,7 +17,7 @@
 <ul>
 	{% for dato in datos %}
 	<li>
-		<a href='{% url principal.views.detalle_recipe dato.id %}'>{{dato.title}}</a>
+		<a href='{% url "main.views.detail_recipe" dato.id %}'>{{dato.title}}</a>
 		<img src='{{MEDIA_URL}}{{dato.imagen}}'>
 	</li>
 	{% empty %}
