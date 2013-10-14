@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+  <meta charset='utf-8'>
+  <title>Recipes for MDW - {% block title %}{% endblock %}</title>
+  <link rel='stylesheet' href='{{STATIC_URL}}css3/style.css'>
+  <link rel='shortcut icon' href='{{STATIC_URL}}img/icono.png'>
+  {% block style_css %}{% endblock %}
+  <script src='{{STATIC_URL}}js/jquery-1.7.2.min.js'></script>
+  <script src='{{STATIC_URL}}js/demo.js'></script>
+</head>
+<body>
+  <header>
+	{% block head %}{% endblock %}
+	<nav>
+	  <ul id='menu'>
+		  <li><a href='/'>Begin</a></li>
+		  <li><a href='/users'>Registered Users</a></li>
+		  <li><a href='/recipes'>Recipes</a></li>
+      <li><a href="/comments">Comments</a></li>
+		  <li><a href='/about'>About</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+    </ul>
+	</nav>
+	<hr>
+  </header>	
+  <section class='body'>
+	{% block body %}{% endblock %}
+  </section>
+  <footer>
+	<p>Gluten Free recipes for all &copy;2013</p>
+  </footer>
+</body>
+</html>

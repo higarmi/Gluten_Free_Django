@@ -29,7 +29,7 @@ def recipes_list(request):
 
 def detail_recipe(request, id_recipe):
     dato = get_object_or_404(Recipe, pk=id_recipe)
-    comments = Comments.objects.filter(Recipe=dato)
+    comments = Comments.objects.filter(recipe=dato)
     return render_to_response('recipe.html',{'recipe':dato,'comments':comments}, context_instance=RequestContext(request))
 
 def contact(request):

@@ -14,7 +14,7 @@ class Recipe(models.Model):
 		return self.title
 
 class Comments(models.Model):
-    Recipe = models.ForeignKey(Recipe)
+    recipe = models.ForeignKey(Recipe)
     text = models.TextField(help_text='Your Comment', verbose_name='Comment')
 
     def __unicode__(self):

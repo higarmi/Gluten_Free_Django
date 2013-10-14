@@ -12,7 +12,53 @@
   {% block style_css %}{% endblock %}
 
 </head>
+<!--
+<body>
+  <header>
+	{% block head %}{% endblock %}
+	
+	<nav>
+	  <ul id='menu'>
+		  <li><a href='/'>Begin</a></li>
+		  <li><a href='/users'>Registered Users</a></li>
+		  <li><a href='/recipes'>Recipes</a></li>
+      <li><a href="/comments">Comments</a></li>
+		  <li><a href='/about'>About</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+    </ul>
+	</nav>
+	
+	
+	<hr>
+  </header>	
+  <section class='body'>
+	{% block body %}{% endblock %}
+  </section>
+  <footer>
+	<p>Gluten Free recipes for all &copy;2013</p>
+  </footer>
+</body>
 
+</html>
+-->
+<!--
+
+<style type="text/css">
+
+</style>
+-->
+<!--[if IE]>
+<script>
+  document.createElement('header');
+  document.createElement('footer');
+  document.createElement('section');
+  document.createElement('nav');
+</script>
+<![endif]-->
+<!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
 <div class="container">
   <header>
     <div id="logo"><a href="#"><img src="{{STATIC_URL}}img/logo.png" alt="your logo here" border="0" class="imagedropshadow" /></a></div>
@@ -36,10 +82,6 @@
      <h3>Gluten-free cooking ...</h3>
     </div>
     </div>
-	
-	<div id="login"><img src="{{STATIC_URL}}img/Gluten-Free2.jpg" alt="Become a fan" width="200" height="200" border="0" class="imagedropshadow" />
-	<h3>Join the gluten-free craze!</h3>
-	<!--
   <div id="login"><form method="post" action="http://YOUR_DOMAIN_HERE/login/login.php">
   Username: <input type="text" name="username" size="15" /><br />
   <br />Password: <input type="password" name="passwort" size="15" /><br />
@@ -47,48 +89,21 @@
   <br /><input type="submit" value="Login" />
   </div>
 </form>
-<h3>Join All the recipes </h3>
+<h3>Join All the recipes </h3><p>In the news for you</p>
 <div class="readbutton"><a href="#">Join Now</a></div>
-  </div>  -->
+  </div>
     	
 	<div id="main">
  
- <details>
  
- <div>
- 
-  
- <!-- <body> -->
-  
-	{% block head %}{% endblock %}
- 
- 
-  
-  <section class='body'>
-	{% block body %}{% endblock %}
-  </section>
-  
-  <!-- </body> -->
-
-  </div>
- 
-
-<div>
- 
-
     <footer>
 
     <span><a href="/">Home </a></span> <span><a href="/users">Members </a> </span> <span><a href="/recipes">Recipes</a></span>  <span><a href="/comments">Comments</a></span> <span><a href="/about">About Us</a></span> <span><a href="#">Register</a></span>  <span><a href="/contact">Contact Us</a></span>   
-    <!--<h5><a href="http://www.imediacreatives.it">Coder &amp; Design Imediacreatives</a></h5> -->     
-    <br><br>
-	<p>Gluten Free recipes for all &copy;2013</p>  <a href="http://www.imediacreatives.it">Coder &amp; Design Imediacreatives</a></h5>
- 
- </footer>  
+    <h5><a href="http://www.imediacreatives.it">Coder &amp; Design Imediacreatives</a></h5>      
+    </footer>    
     </div> 
-	  </details>
-	</div>
   </header>    
 </div>
 <!-- Free template distributed by http://freehtml5templates.com -->
-
+</body> 
 </html>

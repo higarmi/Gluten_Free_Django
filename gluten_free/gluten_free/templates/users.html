@@ -2,25 +2,29 @@
 {% block title %} Gluten-Free Contributors {% endblock %}
 
 {% block head %}
-  <h1>Contributors</h1>
+  <h3>Contributors:</h3>
 {% endblock %}
 
 {% block body %}
 <ul>
-	{% for dato in usuarios %}
-	<li>{{dato.username|capfirst}} - <em>{{dato.email}}</em>
+	{% for data in users %}
+	<p>
+	<li>{{data.username|capfirst}} - <!--<em>{{data.email}}</em> -->
 		<ul>
 			{% for item in recipes %}
-				{% if item.usuario == dato %}
-					<li>{{item}}</li>
+			
+				{% if item.user == data %}
+					<li>{{item}}</li><br>
 				{% endif %}
 			{% empty %}
-				<li>Este usuario aún no ha Registered recipes.</li>
+				<li>This user has no recipes.</li>
+				
 			{% endfor %}
 		</ul>
-	</li>
+	</li></p>
 	{% empty %}
 	<li>No users yet. Be the first to join us...</li>
+	<br>
 	{% endfor %}
-</ul>
+</ul><br>
 {% endblock %}

@@ -4,8 +4,8 @@
 	<h1>Write your comments...</h1>
 {% endblock %}
 {% block body %}
-	<form id='form' method='post' action=''>{% csrf_token %}
-		{{form.as_p}}
+	<form id='formA' method='post' action=''>{% csrf_token %}
+		{{formA.as_p}}
 		<p><input type='submit' value='Confirm'/></p>
 	</form>
 {% endblock %}
